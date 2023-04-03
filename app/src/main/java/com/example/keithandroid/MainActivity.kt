@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         loginBtn = findViewById(R.id.login_loginbtn)
         regBtn = findViewById(R.id.login_registerbtn)
 
-
+        loginBtn.setOnClickListener {
+            Toast.makeText(this, "I just got Clicked!!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
